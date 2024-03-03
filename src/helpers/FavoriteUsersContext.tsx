@@ -1,13 +1,6 @@
 import React, { createContext, useContext, useState } from 'react';
 
-interface User {
-    id: number;
-    name: string;
-    username: string;
-    email: string;
-    phone: string;
-    website: string;
-}
+import {User} from '../types/interfaces';
 
 interface FavoriteUsersContextType {
   favoriteUsers: User[];

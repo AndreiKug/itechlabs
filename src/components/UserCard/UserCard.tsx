@@ -1,20 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { User } from '../../types/interfaces'
 
 import styles from './styles.module.scss';
 
-interface User {
-  id: number;
-  name: string;
-  username: string;
-  email: string;
-  phone: string;
-  website: string;
+interface UserCardProps {
+    user: User;
 }
 
-interface UserCardProps {
-  user: User;
-}
 
 const UserCard: React.FC<UserCardProps> = ({ user }) => {
   return (
