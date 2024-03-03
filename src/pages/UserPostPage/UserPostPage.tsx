@@ -4,24 +4,10 @@ import axios from 'axios';
 
 import UserPost from '../../components/UserPost/UserPost';
 import { useFavoriteUsers } from '../../helpers/FavoriteUsersContext';
+import { Post, User } from "../../types/interfaces";
 
 import styles from './sytles.module.scss';
 import FavoriteIcon from "../../assets/Vector.svg"
-
-interface Post {
-  id: number;
-  title: string;
-  body: string;
-}
-
-interface User {
-    id: number;
-    name: string;
-    username: string;
-    email: string;
-    phone: string;
-    website: string;
-}
 
 const UserPostsPage: React.FC = () => {
   const { userId } = useParams();
