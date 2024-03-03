@@ -1,12 +1,7 @@
 import React from 'react';
 
+import { Post } from '../../types/interfaces';
 import styles from './styles.module.scss';
-
-interface Post {
-  id: number;
-  title: string;
-  body: string;
-}
 
 interface UserPostProps {
   post: Post;

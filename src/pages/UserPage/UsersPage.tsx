@@ -1,17 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+
 import UserCard from '../../components/UserCard/UserCard';
+import { User } from "../../types/interfaces";
 
 import styles from './styles.module.scss';
-
-interface User {
-    id: number;
-    name: string;
-    username: string;
-    email: string;
-    phone: string;
-    website: string;
-  }
 
   const UsersPage: React.FC = () => {
     const [users, setUsers] = useState<User[]>([]);
