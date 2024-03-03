@@ -1,0 +1,35 @@
+.card {
+    display: flex;
+    background-color: var(--base_black_1);
+    border-radius: 18px;
+    width: 240px;
+    padding: 15px 20px;
+    margin: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: -0.3px;
+    
+    &:hover {
+        background-color: var(--base_black_2);
+    }
+}
+  
+  .card h3 {
+    margin: 10px;
+    font-size: 16px;
+    
+  }
+  
+  .card p {
+    margin: 10px;
+    font-size: 12px;
+    
+  }
+  
+  .card a {
+    display: block;
+    color: var(--base_white);
+    text-decoration: none;
+  }
+
+
+  
